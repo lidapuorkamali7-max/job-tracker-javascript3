@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+ <div class="container">
+    <div class="jobheader">
+        <h2>my applications</h2>
+        <div class="rightheader">
+          
+            <button id="addjob">add job</button>
+            <button id="clearbtn">clear jobs</button>
+        </div>
+    </div>
+    <div id="modalcontainer">
+        <form action="" id="form">
+            <button type="button" id="closemodal">X</button>
+
+            <label for="">company name:</label>
+            <input type="text" id="companyinput" placeholder="company...">
+            <label for="">job title:</label>
+            <input type="text" id="jobinput" placeholder="job title..">
+            <label for="">application date:</label>
+            <input type="date" id="dateinput">
+            <label for="">status:</label>
+            <select name="" id="statusselect">
+                <option value="applied">applied</option>
+                <option value="inprogress">inprogress</option>
+                <option value="interviewed">interviewed</option>
+                <option value="rejected">rejected</option>
+
+                <option value="offer">offer</option>
+            </select>
+            <button type="submit" id="addbtn">add application</button>
+
+        </form>
+    </div>
+    <p id="message"></p>
+    <div class="countercontainer">
+        <div id="total"><i class="fas fa-layer-group"></i>
+            <p id="totalcount">0</p> total
+        </div>
+        <div id="applied"><i class="fas fa-paper-plane"></i>
+            <p id="appliedcount">0</p> applied
+        </div>
+        <div id="inprogress"><i class="fas fa-sync"></i>
+            <p id="inprogresscount">0</p> inprogress
+        </div>
+        <div id="interviewed"><i class="fas fa-video"></i>
+            <p id="interviewcount">0</p>interviewed
+        </div>
+        <div id="rejected"><i class="fas fa-times"></i>
+            <p id="rejectcount">0</p>rejected
+        </div>
+        <div id="offer"><i class="fas fa-trophy"></i>
+            <p id="offercount">0</p>offer
+        </div>
+    </div>
+    <div class="btncontainer"> <button id="allbtn">all</button>
+        <button id="appliedbtn">applied</button>
+        <button id="inprogressbtn">in progress</button>
+        <button id="interviewedbtn">interviewed</button>
+        <button id="rejectedbtn">rejected</button>
+        <button id="offerbtn">offer</button>
+    </div>
+    <div id="displayjobs"></div></div>
+    <script src="./js/all.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
